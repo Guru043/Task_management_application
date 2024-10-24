@@ -42,3 +42,28 @@ Before running the application, ensure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/task-management-app.git
    cd task-management-app
+
+   ## API Endpoints
+
+Here are the main API endpoints for the task management system:
+
+| Method | Endpoint       | Description                    |
+|--------|----------------|--------------------------------|
+| GET    | `/tasks`        | Get all tasks                  |
+| POST   | `/tasks`        | Add a new task                 |
+| GET    | `/tasks/:id`    | Get task by ID                 |
+| PUT    | `/tasks/:id`    | Update a task by ID            |
+| DELETE | `/tasks/:id`    | Delete a task by ID            |
+
+### Example POST Request (Add a Task)
+
+**Endpoint**: `/tasks`  
+**Method**: `POST`  
+**Request Body**:
+```json
+{
+    "title": "New Task",
+    "description": "This is a new task",
+    "status": "Pending"
+}
+
